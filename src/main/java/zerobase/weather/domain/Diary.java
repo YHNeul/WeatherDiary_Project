@@ -9,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Getter
@@ -27,7 +26,7 @@ public class Diary {
 
     public void setDateWeather(DateWeather dateWeather) {
         this.date = dateWeather.getDate();
-        this.weather = dateWeather.getWeather();;
+        this.weather = dateWeather.getWeather();
         this.icon = dateWeather.getIcon();
         this.temperature = dateWeather.getTemperature();
     }
