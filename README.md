@@ -54,21 +54,17 @@ Content-Type: application/json
 
 `GET` 요청을 사용해서 해당 기간에 작성된 일기를 조회할 수 있습니다.
 
-##### Example request
+##### Path parameters
 
-``` http request
-GET http://localhost:8080/read/diary?date=2023-01-01
-```
+> /read/diary?date=2023-01-01
 
 #### 기간 조회
 
 `GET` 요청을 사용해서 기간 내의 작성된 일기를 조회할 수 있습니다.
 
-##### Example request
+##### Path parameters
 
-``` http request
-GET http://localhost:8080/read/diary?startDate=2023-01-01&endDate=2023-01-10
-```
+> /read/diary?startDate=2023-01-01&endDate=2023-01-10
 
 #### 수정
 
@@ -95,8 +91,6 @@ Content-Type: application/json
 
 `DELETE` 요청을 사용해서 해당 기간에 작성된 일기를 삭제할 수 있습니다.
 
-##### Example request
+##### Path parameters
 
-``` http request
-DELETE http://localhost:8080/delete/diary?date=2023-01-01
-```
+> /delete/diary?date=2023-01-01
