@@ -42,7 +42,7 @@
 ##### Example request
 
 ``` http request
-PUT http://localhost:8080/create/diary?date=2023-01-01
+POST http://localhost:8080/create/diary?date=2023-01-01
 Content-Type: application/json
 
 {
