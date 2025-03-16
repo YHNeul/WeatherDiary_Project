@@ -31,3 +31,4 @@ public class Diary {
         this.temperature = dateWeather.getTemperature();
     }
 }
+

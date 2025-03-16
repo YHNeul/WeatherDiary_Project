@@ -38,4 +38,5 @@ class JdbcMemoRepositoryTest {
         System.out.println(memoList);
         assertNotNull(memoList);
     }
+
 }

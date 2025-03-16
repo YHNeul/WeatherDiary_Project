@@ -50,7 +50,7 @@
             <fileNamePattern>${LOGS_PATH}/%d{yyyy-MM-dd}_error.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
-        <!-- threshold filter 을 넣어서 error 이상의 로그만 걸러지도록 -->
+        <!-- threshold filter 을 넣어서 error 이상의 로그만 걸러지도록. -->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
         </filter>

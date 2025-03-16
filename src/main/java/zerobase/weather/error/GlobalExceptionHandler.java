@@ -17,3 +17,4 @@ public class GlobalExceptionHandler {
         return new ErrorResponse("Internal server error occurred", HttpStatus.INTERNAL_SERVER_ERROR.value());
     }
 }
+

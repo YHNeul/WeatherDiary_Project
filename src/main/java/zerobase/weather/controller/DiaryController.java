@@ -27,7 +27,7 @@ public class DiaryController {
         diaryService.createDiary(date, text);
     }
 
-    @ApiOperation("선택한 날짜의 모든 일기 데이터를 가져옵니다")
+    @ApiOperation("선택한 날짜의 모든 일기 데이터를 가져온다.")
     @GetMapping("/read/diary")
     List<Diary> readDiary(
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date
@@ -35,13 +35,13 @@ public class DiaryController {
         return diaryService.readDiary(date);
     }
 
-    @ApiOperation("선택한 기간중의 모든 일기 데이터를 가져옵니다")
+    @ApiOperation("선택한 기간중의 모든 일기 데이터를 가져온다.")
     @GetMapping("/read/diaries")
     List<Diary> readDiaries(
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-            @ApiParam(value = "조회할 기간의 첫번째 날", example = "2020-02-02") LocalDate startDate,
+            @ApiParam(value = "조회할 기간의 첫 번째 날", example = "2025-03-01") LocalDate startDate,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-            @ApiParam(value = "조회할 기간의 마지막 날", example = "2020-02-02") LocalDate endDate
+            @ApiParam(value = "조회할 기간의 마지막 날", example = "2025-03-01") LocalDate endDate
     ) {
         return diaryService.readDiaries(startDate, endDate);
     }

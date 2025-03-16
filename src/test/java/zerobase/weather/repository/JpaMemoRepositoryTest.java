@@ -43,4 +43,5 @@ class JpaMemoRepositoryTest {
         Optional<Memo> result = jpaMemoRepository.findById(memo.getId());
         assertEquals(result.get().getText(), "this is jpa memo");
     }
+
 }

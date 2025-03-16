@@ -11,3 +11,4 @@ import java.util.List;
 public interface DateWeatherRepository extends JpaRepository<DateWeather, LocalDate> {
     List<DateWeather> findAllByDate(LocalDate localDate);
 }
+
